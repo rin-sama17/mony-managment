@@ -1,0 +1,101 @@
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/App.css" />
+    <link rel="stylesheet" href="./css/index.css  " />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+
+    <script src="https://files.free-learn.ir/Tryitself/javascript/intro/files/sweetalert2.js"></script>
+  </head>
+
+  <body class="App-header">
+    <nav
+      class="navbar bg shadow-lg p-3 mb-5 rounded"
+      dir="rtl"
+      style="background-color: 44475a; padding: 1rem;"
+    >
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+          <i class="fas fa-money-bill" style="color: chartreuse;"></i>
+          مدیریت مالی
+        </span>
+      </div>
+    </nav>
+
+    <form id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div>
+              <select
+                class="form-control form-select form-select-sm"
+                aria-label=".form-select-sm example"
+                id="type"
+              >
+                <option>نوع</option>
+                <option value="صورتحساب">صورتحساب</option>
+                <option value="پرداخت">پرداخت</option>
+              </select>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  به/از
+                </label>
+                <input
+                  value="رین"
+                  id="customer"
+                  type="text"
+                  class="form-control"
+                  placeholder="بدهکار/بستانکار"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  مقدار(تومان)
+                </label>
+                <input
+                  value="2000"
+                  id="amount"
+                  type="number"
+                  class="form-control"
+                  placeholder="مبلغ جا به جا شده"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">
+                  جزئیات
+                </label>
+                <input
+                  value="ممد"
+                  id="details"
+                  type="text"
+                  class="form-control"
+                  placeholder="جزئیات پرداخت"
+                />
+              </div>
+              <button id="btn1" type="submit" class="btn btn-success btn-lg">
+                اضافه
+              </button>
+            </div>
+          </div>
+          <div dir="rtl" id="Output" role="alert" class="col scroll-div"></div>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="./app.js"></script>
+</html>
